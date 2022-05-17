@@ -1,0 +1,98 @@
+#contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    background: linear-gradient(#f69d3c, #3f87a6);
+}
+ 
+.calculadora{
+    width: 350px;
+    height: 500px;
+    background-color:transparent;
+    border-radius: 15px;
+    position: relative;
+}
+
+.margen{
+    width: 334px;
+    height: 50px;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items:center;
+    padding-left: 16px;
+    border-bottom: 1px solid black;
+    border-radius: 15px 15px 0 0;
+}
+
+.margen img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.pantalla{
+    width: 334px;
+    height: 120px;
+    text-align: right;
+    padding-right: 16px;
+    padding-top: 8px;
+    background: white;
+}
+
+#operation{
+    font-size: 24px;
+}
+
+#result{
+    font-size: 64px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    margin-top: 8px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    font-size: 20px;
+    padding: 16px;
+    font-size: 18px;
+    background: white;
+    position: relative;
+    z-index: 100;
+    border: transparent;
+}
+
+.button:nth-child(4n){
+    background: rgb(243, 226, 130);
+}
+
+.button:nth-child(17) {
+    border-bottom-left-radius: 15px;
+}
+
+.button:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+.button:not(:nth-child(18)):hover {
+    background: rgb(237, 178, 178);
+    cursor: pointer;
+}
+
+.button:not(:nth-child(1)):hover{
+    background: rgb(186, 241, 156);
+    cursor: pointer;
+}
+
